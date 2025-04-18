@@ -1,8 +1,7 @@
 {
-    "name": "phpseclib/phpseclib",
-    "version": "3.0.41",
+    "name": "gaulomail/phpseclib3",
     "type": "library",
-    "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+    "description": "Custom PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
     "keywords": [
         "security",
         "crypto",
@@ -21,34 +20,39 @@
         "asn1",
         "asn.1",
         "BigInteger"
-        ],
-    "homepage": "http://phpseclib.sourceforge.net",
+    ],
+    "homepage": "https://github.com/gaulomail/phpseclib3",
     "license": "MIT",
     "authors": [
         {
+            "name": "Gaudencio Solivatore",
+            "email": "gaudencio@mukuru.com",
+            "role": "Maintainer"
+        },
+        {
             "name": "Jim Wigginton",
             "email": "terrafrost@php.net",
-            "role": "Lead Developer"
+            "role": "Original Developer"
         },
         {
             "name": "Patrick Monnerat",
             "email": "pm@datasphere.ch",
-            "role": "Developer"
+            "role": "Original Developer"
         },
         {
             "name": "Andreas Fischer",
             "email": "bantu@phpbb.com",
-            "role": "Developer"
+            "role": "Original Developer"
         },
         {
             "name": "Hans-Jürgen Petrich",
             "email": "petrich@tronic-media.com",
-            "role": "Developer"
+            "role": "Original Developer"
         },
         {
             "name": "Graham Campbell",
             "email": "graham@alt-three.com",
-            "role": "Developer"
+            "role": "Original Developer"
         }
     ],
     "require": {
@@ -61,9 +65,9 @@
     },
     "suggest": {
         "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
-        "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations.",
+        "ext-openssl": "Install the OpenSSL extension to speed up a wide variety of cryptographic operations.",
         "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
-        "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+        "ext-gmp": "Install the GMP (GNU Multiple Precision) extension to speed up arbitrary precision integer arithmetic operations.",
         "ext-dom": "Install the DOM extension to load XML formatted public keys."
     },
     "autoload": {
@@ -71,12 +75,12 @@
             "phpseclib/bootstrap.php"
         ],
         "psr-4": {
-            "phpseclib3\\": "phpseclib/"
+            "Gaulomail\\Phpseclib3\\": "phpseclib/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "phpseclib3\\Tests\\": "tests/"
+            "Gaulomail\\Phpseclib3\\Tests\\": "tests/"
         }
     },
     "config": {
