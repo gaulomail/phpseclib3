@@ -11,9 +11,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\Common\Formats\Keys;
+namespace Gaulomail\Phpseclib3\Crypt\Common\Formats\Keys;
 
-use phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
 
 /**
  * JSON Web Key Formatted Key Handler

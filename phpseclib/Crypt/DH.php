@@ -22,15 +22,15 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace Gaulomail\Phpseclib3\Crypt;
 
-use phpseclib3\Crypt\Common\AsymmetricKey;
-use phpseclib3\Crypt\DH\Parameters;
-use phpseclib3\Crypt\DH\PrivateKey;
-use phpseclib3\Crypt\DH\PublicKey;
-use phpseclib3\Exception\NoKeyLoadedException;
-use phpseclib3\Exception\UnsupportedOperationException;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Crypt\Common\AsymmetricKey;
+use Gaulomail\Phpseclib3\Crypt\DH\Parameters;
+use Gaulomail\Phpseclib3\Crypt\DH\PrivateKey;
+use Gaulomail\Phpseclib3\Crypt\DH\PublicKey;
+use Gaulomail\Phpseclib3\Exception\NoKeyLoadedException;
+use Gaulomail\Phpseclib3\Exception\UnsupportedOperationException;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 /**
  * Pure-PHP (EC)DH implementation

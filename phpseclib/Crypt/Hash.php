@@ -29,13 +29,13 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace Gaulomail\Phpseclib3\Crypt;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Exception\InsufficientSetupException;
-use phpseclib3\Exception\UnsupportedAlgorithmException;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Math\PrimeField;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Math\PrimeField;
 
 /**
  * @author  Jim Wigginton <terrafrost@php.net>

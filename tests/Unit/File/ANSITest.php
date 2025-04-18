@@ -6,10 +6,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Tests\Unit\File;
+namespace Gaulomail\Phpseclib3\Tests\Unit\File;
 
-use phpseclib3\File\ANSI;
-use phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\Phpseclib3\File\ANSI;
+use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
 
 class ANSITest extends PhpseclibTestCase
 {

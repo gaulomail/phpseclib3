@@ -6,18 +6,18 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Tests\Unit\Crypt\EC;
+namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\EC;
 
-use phpseclib3\Crypt\EC;
-use phpseclib3\Crypt\EC\Formats\Keys\OpenSSH;
-use phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
-use phpseclib3\Crypt\EC\Formats\Keys\PKCS8;
-use phpseclib3\Crypt\EC\Formats\Keys\PuTTY;
-use phpseclib3\Crypt\EC\Formats\Keys\XML;
-use phpseclib3\Crypt\EC\PrivateKey;
-use phpseclib3\Crypt\EC\PublicKey;
-use phpseclib3\Crypt\PublicKeyLoader;
-use phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\Phpseclib3\Crypt\EC;
+use Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys\OpenSSH;
+use Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
+use Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys\PKCS8;
+use Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys\PuTTY;
+use Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys\XML;
+use Gaulomail\Phpseclib3\Crypt\EC\PrivateKey;
+use Gaulomail\Phpseclib3\Crypt\EC\PublicKey;
+use Gaulomail\Phpseclib3\Crypt\PublicKeyLoader;
+use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
 
 class KeyTest extends PhpseclibTestCase
 {

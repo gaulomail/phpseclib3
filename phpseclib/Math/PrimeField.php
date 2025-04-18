@@ -13,10 +13,10 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Math;
+namespace Gaulomail\Phpseclib3\Math;
 
-use phpseclib3\Math\Common\FiniteField;
-use phpseclib3\Math\PrimeField\Integer;
+use Gaulomail\Phpseclib3\Math\Common\FiniteField;
+use Gaulomail\Phpseclib3\Math\PrimeField\Integer;
 
 /**
  * Prime Finite Fields

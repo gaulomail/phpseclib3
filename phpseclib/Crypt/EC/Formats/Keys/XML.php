@@ -16,16 +16,16 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\EC\Formats\Keys;
+namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Prime as PrimeCurve;
-use phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use phpseclib3\Exception\BadConfigurationException;
-use phpseclib3\Exception\UnsupportedCurveException;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Prime as PrimeCurve;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use Gaulomail\Phpseclib3\Exception\BadConfigurationException;
+use Gaulomail\Phpseclib3\Exception\UnsupportedCurveException;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 /**
  * XML Formatted EC Key Handler

@@ -32,19 +32,19 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\Common;
+namespace Gaulomail\Phpseclib3\Crypt\Common;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Blowfish;
-use phpseclib3\Crypt\Hash;
-use phpseclib3\Exception\BadDecryptionException;
-use phpseclib3\Exception\BadModeException;
-use phpseclib3\Exception\InconsistentSetupException;
-use phpseclib3\Exception\InsufficientSetupException;
-use phpseclib3\Exception\UnsupportedAlgorithmException;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Math\BinaryField;
-use phpseclib3\Math\PrimeField;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\Blowfish;
+use Gaulomail\Phpseclib3\Crypt\Hash;
+use Gaulomail\Phpseclib3\Exception\BadDecryptionException;
+use Gaulomail\Phpseclib3\Exception\BadModeException;
+use Gaulomail\Phpseclib3\Exception\InconsistentSetupException;
+use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Math\BinaryField;
+use Gaulomail\Phpseclib3\Math\PrimeField;
 
 /**
  * Base Class for all \phpseclib3\Crypt\* cipher classes

@@ -6,14 +6,14 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Tests\Unit\Crypt\DSA;
+namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\DSA;
 
-use phpseclib3\Crypt\DSA\Parameters;
-use phpseclib3\Crypt\DSA\PrivateKey;
-use phpseclib3\Crypt\DSA\PublicKey;
-use phpseclib3\Crypt\PublicKeyLoader;
-use phpseclib3\Exception\NoKeyLoadedException;
-use phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\Phpseclib3\Crypt\DSA\Parameters;
+use Gaulomail\Phpseclib3\Crypt\DSA\PrivateKey;
+use Gaulomail\Phpseclib3\Crypt\DSA\PublicKey;
+use Gaulomail\Phpseclib3\Crypt\PublicKeyLoader;
+use Gaulomail\Phpseclib3\Exception\NoKeyLoadedException;
+use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
 
 class LoadDSAKeyTest extends PhpseclibTestCase
 {

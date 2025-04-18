@@ -11,10 +11,10 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Math\BigInteger\Engines\BCMath\Reductions;
+namespace Gaulomail\Phpseclib3\Math\BigInteger\Engines\BCMath\Reductions;
 
-use phpseclib3\Math\BigInteger\Engines\BCMath;
-use phpseclib3\Math\BigInteger\Engines\BCMath\Base;
+use Gaulomail\Phpseclib3\Math\BigInteger\Engines\BCMath;
+use Gaulomail\Phpseclib3\Math\BigInteger\Engines\BCMath\Base;
 
 /**
  * PHP Barrett Modular Exponentiation Engine

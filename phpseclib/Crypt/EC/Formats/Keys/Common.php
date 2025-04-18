@@ -11,17 +11,17 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\EC\Formats\Keys;
+namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Binary as BinaryCurve;
-use phpseclib3\Crypt\EC\BaseCurves\Prime as PrimeCurve;
-use phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use phpseclib3\Exception\UnsupportedCurveException;
-use phpseclib3\File\ASN1;
-use phpseclib3\File\ASN1\Maps;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Binary as BinaryCurve;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Prime as PrimeCurve;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use Gaulomail\Phpseclib3\Exception\UnsupportedCurveException;
+use Gaulomail\Phpseclib3\File\ASN1;
+use Gaulomail\Phpseclib3\File\ASN1\Maps;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 /**
  * Generic EC Key Parsing Helper functions

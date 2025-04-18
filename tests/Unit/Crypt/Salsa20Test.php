@@ -6,10 +6,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Tests\Unit\Crypt;
+namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt;
 
-use phpseclib3\Crypt\Salsa20;
-use phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\Phpseclib3\Crypt\Salsa20;
+use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
 
 class Salsa20Test extends PhpseclibTestCase
 {

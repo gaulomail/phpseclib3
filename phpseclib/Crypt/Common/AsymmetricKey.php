@@ -11,14 +11,14 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\Common;
+namespace Gaulomail\Phpseclib3\Crypt\Common;
 
-use phpseclib3\Crypt\DSA;
-use phpseclib3\Crypt\Hash;
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Exception\NoKeyLoadedException;
-use phpseclib3\Exception\UnsupportedFormatException;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Crypt\DSA;
+use Gaulomail\Phpseclib3\Crypt\Hash;
+use Gaulomail\Phpseclib3\Crypt\RSA;
+use Gaulomail\Phpseclib3\Exception\NoKeyLoadedException;
+use Gaulomail\Phpseclib3\Exception\UnsupportedFormatException;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 /**
  * Base Class for all asymmetric cipher classes

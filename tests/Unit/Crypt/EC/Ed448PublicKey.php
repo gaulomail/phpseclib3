@@ -1,10 +1,10 @@
 <?php
 
-namespace phpseclib3\Tests\Unit\Crypt\EC;
+namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\EC;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\EC\Curves\Ed448;
-use phpseclib3\Crypt\EC\Formats\Keys\Common;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed448;
+use Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys\Common;
 
 class Ed448PublicKey
 {

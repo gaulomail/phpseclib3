@@ -13,11 +13,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Net\SFTP;
+namespace Gaulomail\Phpseclib3\Net\SFTP;
 
-use phpseclib3\Crypt\Common\PrivateKey;
-use phpseclib3\Net\SFTP;
-use phpseclib3\Net\SSH2;
+use Gaulomail\Phpseclib3\Crypt\Common\PrivateKey;
+use Gaulomail\Phpseclib3\Net\SFTP;
+use Gaulomail\Phpseclib3\Net\SSH2;
 
 /**
  * SFTP Stream Wrapper

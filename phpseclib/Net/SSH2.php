@@ -43,35 +43,35 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Net;
+namespace Gaulomail\Phpseclib3\Net;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Blowfish;
-use phpseclib3\Crypt\ChaCha20;
-use phpseclib3\Crypt\Common\AsymmetricKey;
-use phpseclib3\Crypt\Common\PrivateKey;
-use phpseclib3\Crypt\Common\PublicKey;
-use phpseclib3\Crypt\Common\SymmetricKey;
-use phpseclib3\Crypt\DH;
-use phpseclib3\Crypt\DSA;
-use phpseclib3\Crypt\EC;
-use phpseclib3\Crypt\Hash;
-use phpseclib3\Crypt\Random;
-use phpseclib3\Crypt\RC4;
-use phpseclib3\Crypt\Rijndael;
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Crypt\TripleDES; // Used to do Diffie-Hellman key exchange and DSA/RSA signature verification.
-use phpseclib3\Crypt\Twofish;
-use phpseclib3\Exception\ConnectionClosedException;
-use phpseclib3\Exception\InsufficientSetupException;
-use phpseclib3\Exception\InvalidPacketLengthException;
-use phpseclib3\Exception\NoSupportedAlgorithmsException;
-use phpseclib3\Exception\TimeoutException;
-use phpseclib3\Exception\UnableToConnectException;
-use phpseclib3\Exception\UnsupportedAlgorithmException;
-use phpseclib3\Exception\UnsupportedCurveException;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\System\SSH\Agent;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\Blowfish;
+use Gaulomail\Phpseclib3\Crypt\ChaCha20;
+use Gaulomail\Phpseclib3\Crypt\Common\AsymmetricKey;
+use Gaulomail\Phpseclib3\Crypt\Common\PrivateKey;
+use Gaulomail\Phpseclib3\Crypt\Common\PublicKey;
+use Gaulomail\Phpseclib3\Crypt\Common\SymmetricKey;
+use Gaulomail\Phpseclib3\Crypt\DH;
+use Gaulomail\Phpseclib3\Crypt\DSA;
+use Gaulomail\Phpseclib3\Crypt\EC;
+use Gaulomail\Phpseclib3\Crypt\Hash;
+use Gaulomail\Phpseclib3\Crypt\Random;
+use Gaulomail\Phpseclib3\Crypt\RC4;
+use Gaulomail\Phpseclib3\Crypt\Rijndael;
+use Gaulomail\Phpseclib3\Crypt\RSA;
+use Gaulomail\Phpseclib3\Crypt\TripleDES; // Used to do Diffie-Hellman key exchange and DSA/RSA signature verification.
+use Gaulomail\Phpseclib3\Crypt\Twofish;
+use Gaulomail\Phpseclib3\Exception\ConnectionClosedException;
+use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\Phpseclib3\Exception\InvalidPacketLengthException;
+use Gaulomail\Phpseclib3\Exception\NoSupportedAlgorithmsException;
+use Gaulomail\Phpseclib3\Exception\TimeoutException;
+use Gaulomail\Phpseclib3\Exception\UnableToConnectException;
+use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\Phpseclib3\Exception\UnsupportedCurveException;
+use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\System\SSH\Agent;
 
 /**
  * Pure-PHP implementation of SSHv2.

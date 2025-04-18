@@ -9,9 +9,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\EC;
+namespace Gaulomail\Phpseclib3\Crypt\EC;
 
-use phpseclib3\Crypt\EC;
+use Gaulomail\Phpseclib3\Crypt\EC;
 
 /**
  * EC Parameters

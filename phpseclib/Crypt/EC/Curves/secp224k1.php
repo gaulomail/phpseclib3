@@ -11,10 +11,10 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\Curves;
+namespace Gaulomail\Phpseclib3\Crypt\EC\Curves;
 
-use phpseclib3\Crypt\EC\BaseCurves\KoblitzPrime;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\KoblitzPrime;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 class secp224k1 extends KoblitzPrime
 {

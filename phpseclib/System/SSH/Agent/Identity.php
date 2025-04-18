@@ -13,17 +13,17 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\System\SSH\Agent;
+namespace Gaulomail\Phpseclib3\System\SSH\Agent;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Common\PrivateKey;
-use phpseclib3\Crypt\Common\PublicKey;
-use phpseclib3\Crypt\DSA;
-use phpseclib3\Crypt\EC;
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Exception\UnsupportedAlgorithmException;
-use phpseclib3\System\SSH\Agent;
-use phpseclib3\System\SSH\Common\Traits\ReadBytes;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\Common\PrivateKey;
+use Gaulomail\Phpseclib3\Crypt\Common\PublicKey;
+use Gaulomail\Phpseclib3\Crypt\DSA;
+use Gaulomail\Phpseclib3\Crypt\EC;
+use Gaulomail\Phpseclib3\Crypt\RSA;
+use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\Phpseclib3\System\SSH\Agent;
+use Gaulomail\Phpseclib3\System\SSH\Common\Traits\ReadBytes;
 
 /**
  * Pure-PHP ssh-agent client identity object

@@ -12,11 +12,11 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Math;
+namespace Gaulomail\Phpseclib3\Math;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Math\BinaryField\Integer;
-use phpseclib3\Math\Common\FiniteField;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Math\BinaryField\Integer;
+use Gaulomail\Phpseclib3\Math\Common\FiniteField;
 
 /**
  * Binary Finite Fields

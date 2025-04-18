@@ -32,7 +32,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace Gaulomail\Phpseclib3\Crypt;
 
 /**
  * Pure-PHP implementation of Triple DES.

@@ -1,6 +1,6 @@
 <?php
 
-namespace phpseclib3\Exception;
+namespace Gaulomail\Phpseclib3\Exception;
 
 /**
  * Indicates a timeout awaiting server response

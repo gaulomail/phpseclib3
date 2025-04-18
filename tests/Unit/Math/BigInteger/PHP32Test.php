@@ -6,9 +6,9 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Tests\Unit\Math\BigInteger;
+namespace Gaulomail\Phpseclib3\Tests\Unit\Math\BigInteger;
 
-use phpseclib3\Math\BigInteger\Engines\PHP32;
+use Gaulomail\Phpseclib3\Math\BigInteger\Engines\PHP32;
 
 class PHP32Test extends TestCase
 {

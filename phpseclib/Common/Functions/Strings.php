@@ -11,13 +11,13 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Common\Functions;
+namespace Gaulomail\Phpseclib3\Common\Functions;
 
 use ParagonIE\ConstantTime\Base64;
 use ParagonIE\ConstantTime\Base64UrlSafe;
 use ParagonIE\ConstantTime\Hex;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Math\Common\FiniteField;
+use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Math\Common\FiniteField;
 
 /**
  * Common String Functions

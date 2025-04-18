@@ -6,11 +6,11 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Tests\Functional\Net;
+namespace Gaulomail\Phpseclib3\Tests\Functional\Net;
 
-use phpseclib3\Net\SSH2;
-use phpseclib3\System\SSH\Agent;
-use phpseclib3\Tests\PhpseclibFunctionalTestCase;
+use Gaulomail\Phpseclib3\Net\SSH2;
+use Gaulomail\Phpseclib3\System\SSH\Agent;
+use Gaulomail\Phpseclib3\Tests\PhpseclibFunctionalTestCase;
 
 class SSH2AgentTest extends PhpseclibFunctionalTestCase
 {

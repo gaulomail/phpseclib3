@@ -16,7 +16,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\File;
+namespace Gaulomail\Phpseclib3\File;
 
 /**
  * Pure-PHP ANSI Decoder

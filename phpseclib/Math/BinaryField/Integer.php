@@ -18,12 +18,12 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Math\BinaryField;
+namespace Gaulomail\Phpseclib3\Math\BinaryField;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Math\BigInteger;
-use phpseclib3\Math\BinaryField;
-use phpseclib3\Math\Common\FiniteField\Integer as Base;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Math\BinaryField;
+use Gaulomail\Phpseclib3\Math\Common\FiniteField\Integer as Base;
 
 /**
  * Binary Finite Fields

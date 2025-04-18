@@ -11,9 +11,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\File\ASN1\Maps;
+namespace Gaulomail\Phpseclib3\File\ASN1\Maps;
 
-use phpseclib3\File\ASN1;
+use Gaulomail\Phpseclib3\File\ASN1;
 
 /**
  * RC2CBCParameter

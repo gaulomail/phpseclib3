@@ -6,10 +6,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace phpseclib3\Tests\Unit\Net;
+namespace Gaulomail\Phpseclib3\Tests\Unit\Net;
 
-use phpseclib3\Net\SFTP\Stream;
-use phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\Phpseclib3\Net\SFTP\Stream;
+use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
 
 class SFTPStreamUnitTest extends PhpseclibTestCase
 {

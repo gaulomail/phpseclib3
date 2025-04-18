@@ -9,11 +9,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DSA;
+namespace Gaulomail\Phpseclib3\Crypt\DSA;
 
-use phpseclib3\Crypt\Common;
-use phpseclib3\Crypt\DSA;
-use phpseclib3\Crypt\DSA\Formats\Signature\ASN1 as ASN1Signature;
+use Gaulomail\Phpseclib3\Crypt\Common;
+use Gaulomail\Phpseclib3\Crypt\DSA;
+use Gaulomail\Phpseclib3\Crypt\DSA\Formats\Signature\ASN1 as ASN1Signature;
 
 /**
  * DSA Public Key

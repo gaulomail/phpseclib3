@@ -1,9 +1,9 @@
 <?php
 
-namespace phpseclib3\Tests\Functional\Net;
+namespace Gaulomail\Phpseclib3\Tests\Functional\Net;
 
-use phpseclib3\Exception\UnableToConnectException;
-use phpseclib3\Net\SFTP;
+use Gaulomail\Phpseclib3\Exception\UnableToConnectException;
+use Gaulomail\Phpseclib3\Net\SFTP;
 use PHPUnit\Framework\TestCase;
 
 class SFTPWrongServerTest extends TestCase

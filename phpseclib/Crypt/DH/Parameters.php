@@ -9,9 +9,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\DH;
+namespace Gaulomail\Phpseclib3\Crypt\DH;
 
-use phpseclib3\Crypt\DH;
+use Gaulomail\Phpseclib3\Crypt\DH;
 
 /**
  * DH Parameters

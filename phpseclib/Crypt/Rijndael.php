@@ -50,14 +50,14 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt;
+namespace Gaulomail\Phpseclib3\Crypt;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Common\BlockCipher;
-use phpseclib3\Exception\BadDecryptionException;
-use phpseclib3\Exception\BadModeException;
-use phpseclib3\Exception\InconsistentSetupException;
-use phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\Common\BlockCipher;
+use Gaulomail\Phpseclib3\Exception\BadDecryptionException;
+use Gaulomail\Phpseclib3\Exception\BadModeException;
+use Gaulomail\Phpseclib3\Exception\InconsistentSetupException;
+use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
 
 /**
  * Pure-PHP implementation of Rijndael.

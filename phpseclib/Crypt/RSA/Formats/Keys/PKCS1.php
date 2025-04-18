@@ -20,13 +20,13 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\RSA\Formats\Keys;
+namespace Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Common\Formats\Keys\PKCS1 as Progenitor;
-use phpseclib3\File\ASN1;
-use phpseclib3\File\ASN1\Maps;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\Common\Formats\Keys\PKCS1 as Progenitor;
+use Gaulomail\Phpseclib3\File\ASN1;
+use Gaulomail\Phpseclib3\File\ASN1\Maps;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 /**
  * PKCS#1 Formatted RSA Key Handler

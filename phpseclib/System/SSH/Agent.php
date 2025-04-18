@@ -30,15 +30,15 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\System\SSH;
+namespace Gaulomail\Phpseclib3\System\SSH;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Common\PublicKey;
-use phpseclib3\Crypt\PublicKeyLoader;
-use phpseclib3\Crypt\RSA;
-use phpseclib3\Exception\BadConfigurationException;
-use phpseclib3\Net\SSH2;
-use phpseclib3\System\SSH\Agent\Identity;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\Common\PublicKey;
+use Gaulomail\Phpseclib3\Crypt\PublicKeyLoader;
+use Gaulomail\Phpseclib3\Crypt\RSA;
+use Gaulomail\Phpseclib3\Exception\BadConfigurationException;
+use Gaulomail\Phpseclib3\Net\SSH2;
+use Gaulomail\Phpseclib3\System\SSH\Agent\Identity;
 
 /**
  * Pure-PHP ssh-agent client identity factory

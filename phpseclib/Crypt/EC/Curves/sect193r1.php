@@ -11,10 +11,10 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Crypt\EC\Curves;
+namespace Gaulomail\Phpseclib3\Crypt\EC\Curves;
 
-use phpseclib3\Crypt\EC\BaseCurves\Binary;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Binary;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 class sect193r1 extends Binary
 {

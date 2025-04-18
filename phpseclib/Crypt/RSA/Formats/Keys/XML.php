@@ -18,12 +18,12 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\Crypt\RSA\Formats\Keys;
+namespace Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Exception\BadConfigurationException;
-use phpseclib3\Exception\UnsupportedFormatException;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Exception\BadConfigurationException;
+use Gaulomail\Phpseclib3\Exception\UnsupportedFormatException;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 /**
  * XML Formatted RSA Key Handler

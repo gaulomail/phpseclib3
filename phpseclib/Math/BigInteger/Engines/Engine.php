@@ -11,12 +11,12 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace phpseclib3\Math\BigInteger\Engines;
+namespace Gaulomail\Phpseclib3\Math\BigInteger\Engines;
 
-use phpseclib3\Common\Functions\Strings;
-use phpseclib3\Crypt\Random;
-use phpseclib3\Exception\BadConfigurationException;
-use phpseclib3\Math\BigInteger;
+use Gaulomail\Phpseclib3\Common\Functions\Strings;
+use Gaulomail\Phpseclib3\Crypt\Random;
+use Gaulomail\Phpseclib3\Exception\BadConfigurationException;
+use Gaulomail\Phpseclib3\Math\BigInteger;
 
 /**
  * Base Engine.

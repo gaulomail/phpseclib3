@@ -11,7 +11,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace phpseclib3\System\SSH\Common\Traits;
+namespace Gaulomail\Phpseclib3\System\SSH\Common\Traits;
 
 /**
  * ReadBytes trait
