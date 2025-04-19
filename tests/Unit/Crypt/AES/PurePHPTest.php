@@ -6,7 +6,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\AES;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt\AES;
 
 class PurePHPTest extends TestCase
 {

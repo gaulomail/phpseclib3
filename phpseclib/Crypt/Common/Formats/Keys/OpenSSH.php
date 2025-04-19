@@ -13,12 +13,12 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\Common\Formats\Keys;
+namespace Gaulomail\phpseclib3\Crypt\Common\Formats\Keys;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\AES;
-use Gaulomail\Phpseclib3\Crypt\Random;
-use Gaulomail\Phpseclib3\Exception\BadDecryptionException;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\AES;
+use Gaulomail\phpseclib3\Crypt\Random;
+use Gaulomail\phpseclib3\Exception\BadDecryptionException;
 
 /**
  * OpenSSH Formatted RSA Key Handler

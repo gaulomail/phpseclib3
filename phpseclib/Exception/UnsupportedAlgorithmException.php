@@ -11,7 +11,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Exception;
+namespace Gaulomail\phpseclib3\Exception;
 
 /**
  * UnsupportedAlgorithmException

@@ -6,10 +6,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Functional\Net;
+namespace Gaulomail\phpseclib3\Tests\Functional\Net;
 
-use Gaulomail\Phpseclib3\Net\SFTP;
-use Gaulomail\Phpseclib3\Tests\PhpseclibFunctionalTestCase;
+use Gaulomail\phpseclib3\Net\SFTP;
+use Gaulomail\phpseclib3\Tests\PhpseclibFunctionalTestCase;
 
 class SFTPUserStoryTest extends PhpseclibFunctionalTestCase
 {

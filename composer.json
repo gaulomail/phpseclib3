@@ -58,7 +58,8 @@
     "require": {
         "php": ">=5.6.1",
         "paragonie/constant_time_encoding": "^1|^2|^3",
-        "paragonie/random_compat": "^1.4|^2.0|^9.99.99"
+        "paragonie/random_compat": "^1.4|^2.0|^9.99.99",
+      "ext-json": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "*"
@@ -75,12 +76,12 @@
             "phpseclib/bootstrap.php"
         ],
         "psr-4": {
-            "Gaulomail\\Phpseclib3\\": "phpseclib/"
+            "Gaulomail\\phpseclib3\\": "phpseclib/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Gaulomail\\Phpseclib3\\Tests\\": "tests/"
+            "Gaulomail\\phpseclib3\\Tests\\": "tests/"
         }
     },
     "config": {

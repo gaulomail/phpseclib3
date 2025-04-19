@@ -13,9 +13,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\File\ASN1\Maps;
+namespace Gaulomail\phpseclib3\File\ASN1\Maps;
 
-use Gaulomail\Phpseclib3\File\ASN1;
+use Gaulomail\phpseclib3\File\ASN1;
 
 /**
  * SpecifiedECDomain

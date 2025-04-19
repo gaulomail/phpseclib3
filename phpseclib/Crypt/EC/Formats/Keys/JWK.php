@@ -11,19 +11,19 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys;
+namespace Gaulomail\phpseclib3\Crypt\EC\Formats\Keys;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\Common\Formats\Keys\JWK as Progenitor;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed25519;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\secp256k1;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\secp256r1;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\secp384r1;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\secp521r1;
-use Gaulomail\Phpseclib3\Exception\UnsupportedCurveException;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\Common\Formats\Keys\JWK as Progenitor;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Ed25519;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\secp256k1;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\secp256r1;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\secp384r1;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\secp521r1;
+use Gaulomail\phpseclib3\Exception\UnsupportedCurveException;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * JWK Formatted EC Handler

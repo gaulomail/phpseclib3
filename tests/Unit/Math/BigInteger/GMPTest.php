@@ -6,9 +6,9 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Math\BigInteger;
+namespace Gaulomail\phpseclib3\Tests\Unit\Math\BigInteger;
 
-use Gaulomail\Phpseclib3\Math\BigInteger\Engines\GMP;
+use Gaulomail\phpseclib3\Math\BigInteger\Engines\GMP;
 
 class GMPTest extends TestCase
 {
@@ -27,6 +27,6 @@ class GMPTest extends TestCase
 
     public static function getStaticClass()
     {
-        return 'phpseclib3\Math\BigInteger\Engines\GMP';
+        return 'Gaulomail\phpseclib3\Math\BigInteger\Engines\GMP';
     }
 }

@@ -13,11 +13,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys;
+namespace Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\Common\Formats\Keys\OpenSSH as Progenitor;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\Common\Formats\Keys\OpenSSH as Progenitor;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * OpenSSH Formatted RSA Key Handler

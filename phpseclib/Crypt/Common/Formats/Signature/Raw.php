@@ -13,9 +13,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\Common\Formats\Signature;
+namespace Gaulomail\phpseclib3\Crypt\Common\Formats\Signature;
 
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Raw Signature Handler

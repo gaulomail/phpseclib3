@@ -6,10 +6,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\File;
+namespace Gaulomail\phpseclib3\Tests\Unit\File;
 
-use Gaulomail\Phpseclib3\File\ASN1;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\File\ASN1;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class ASN1Test extends PhpseclibTestCase
 {

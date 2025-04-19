@@ -11,9 +11,9 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace Gaulomail\Phpseclib3\Math\BigInteger\Engines\GMP;
+namespace Gaulomail\phpseclib3\Math\BigInteger\Engines\GMP;
 
-use Gaulomail\Phpseclib3\Math\BigInteger\Engines\GMP;
+use Gaulomail\phpseclib3\Math\BigInteger\Engines\GMP;
 
 /**
  * GMP Modular Exponentiation Engine

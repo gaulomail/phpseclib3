@@ -1,10 +1,10 @@
 <?php
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Math;
+namespace Gaulomail\phpseclib3\Tests\Unit\Math;
 
-use Gaulomail\Phpseclib3\Math\BigInteger;
-use Gaulomail\Phpseclib3\Math\PrimeField;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Math\PrimeField;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class PrimeFieldTest extends PhpseclibTestCase
 {

@@ -6,13 +6,13 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\AES;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt\AES;
 
-use Gaulomail\Phpseclib3\Crypt\AES;
-use Gaulomail\Phpseclib3\Crypt\Rijndael;
-use Gaulomail\Phpseclib3\Exception\InconsistentSetupException;
-use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\AES;
+use Gaulomail\phpseclib3\Crypt\Rijndael;
+use Gaulomail\phpseclib3\Exception\InconsistentSetupException;
+use Gaulomail\phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 abstract class TestCase extends PhpseclibTestCase
 {

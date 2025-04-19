@@ -11,9 +11,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\DSA\Formats\Signature;
+namespace Gaulomail\phpseclib3\Crypt\DSA\Formats\Signature;
 
-use Gaulomail\Phpseclib3\Crypt\Common\Formats\Signature\Raw as Progenitor;
+use Gaulomail\phpseclib3\Crypt\Common\Formats\Signature\Raw as Progenitor;
 
 /**
  * Raw DSA Signature Handler

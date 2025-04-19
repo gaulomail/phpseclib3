@@ -11,7 +11,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\File\ASN1;
+namespace Gaulomail\phpseclib3\File\ASN1;
 
 /**
  * ASN.1 Raw Element

@@ -11,7 +11,7 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Curves;
+namespace Gaulomail\phpseclib3\Crypt\EC\Curves;
 
 final class nistk283 extends sect283k1
 {

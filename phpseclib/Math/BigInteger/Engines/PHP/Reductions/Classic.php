@@ -11,9 +11,9 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace Gaulomail\Phpseclib3\Math\BigInteger\Engines\PHP\Reductions;
+namespace Gaulomail\phpseclib3\Math\BigInteger\Engines\PHP\Reductions;
 
-use Gaulomail\Phpseclib3\Math\BigInteger\Engines\PHP\Base;
+use Gaulomail\phpseclib3\Math\BigInteger\Engines\PHP\Base;
 
 /**
  * PHP Classic Modular Exponentiation Engine

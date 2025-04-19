@@ -11,13 +11,13 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt;
+namespace Gaulomail\phpseclib3\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\Common\AsymmetricKey;
-use Gaulomail\Phpseclib3\Crypt\Common\PrivateKey;
-use Gaulomail\Phpseclib3\Crypt\Common\PublicKey;
-use Gaulomail\Phpseclib3\Exception\NoKeyLoadedException;
-use Gaulomail\Phpseclib3\File\X509;
+use Gaulomail\phpseclib3\Crypt\Common\AsymmetricKey;
+use Gaulomail\phpseclib3\Crypt\Common\PrivateKey;
+use Gaulomail\phpseclib3\Crypt\Common\PublicKey;
+use Gaulomail\phpseclib3\Exception\NoKeyLoadedException;
+use Gaulomail\phpseclib3\File\X509;
 
 /**
  * PublicKeyLoader

@@ -14,11 +14,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Signature;
+namespace Gaulomail\phpseclib3\Crypt\EC\Formats\Signature;
 
-use Gaulomail\Phpseclib3\File\ASN1 as Encoder;
-use Gaulomail\Phpseclib3\File\ASN1\Maps\EcdsaSigValue;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\File\ASN1 as Encoder;
+use Gaulomail\phpseclib3\File\ASN1\Maps\EcdsaSigValue;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * ASN1 Signature Handler

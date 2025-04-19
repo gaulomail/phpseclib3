@@ -9,10 +9,10 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\DH;
+namespace Gaulomail\phpseclib3\Crypt\DH;
 
-use Gaulomail\Phpseclib3\Crypt\Common;
-use Gaulomail\Phpseclib3\Crypt\DH;
+use Gaulomail\phpseclib3\Crypt\Common;
+use Gaulomail\phpseclib3\Crypt\DH;
 
 /**
  * DH Public Key

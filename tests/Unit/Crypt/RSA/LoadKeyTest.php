@@ -6,21 +6,21 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\RSA;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt\RSA;
 
-use Gaulomail\Phpseclib3\Crypt\PublicKeyLoader;
-use Gaulomail\Phpseclib3\Crypt\RSA;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\OpenSSH;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\PKCS1;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\PKCS8;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\PSS;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\PuTTY;
-use Gaulomail\Phpseclib3\Crypt\RSA\PrivateKey;
-use Gaulomail\Phpseclib3\Crypt\RSA\PublicKey;
-use Gaulomail\Phpseclib3\Exception\NoKeyLoadedException;
-use Gaulomail\Phpseclib3\Exception\UnsupportedFormatException;
-use Gaulomail\Phpseclib3\Math\BigInteger;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\PublicKeyLoader;
+use Gaulomail\phpseclib3\Crypt\RSA;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\OpenSSH;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\PKCS1;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\PKCS8;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\PSS;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\PuTTY;
+use Gaulomail\phpseclib3\Crypt\RSA\PrivateKey;
+use Gaulomail\phpseclib3\Crypt\RSA\PublicKey;
+use Gaulomail\phpseclib3\Exception\NoKeyLoadedException;
+use Gaulomail\phpseclib3\Exception\UnsupportedFormatException;
+use Gaulomail\phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class LoadKeyTest extends PhpseclibTestCase
 {

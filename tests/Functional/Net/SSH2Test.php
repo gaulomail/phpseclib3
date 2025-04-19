@@ -6,11 +6,11 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Functional\Net;
+namespace Gaulomail\phpseclib3\Tests\Functional\Net;
 
-use Gaulomail\Phpseclib3\Exception\NoSupportedAlgorithmsException;
-use Gaulomail\Phpseclib3\Net\SSH2;
-use Gaulomail\Phpseclib3\Tests\PhpseclibFunctionalTestCase;
+use Gaulomail\phpseclib3\Exception\NoSupportedAlgorithmsException;
+use Gaulomail\phpseclib3\Net\SSH2;
+use Gaulomail\phpseclib3\Tests\PhpseclibFunctionalTestCase;
 
 class SSH2Test extends PhpseclibFunctionalTestCase
 {

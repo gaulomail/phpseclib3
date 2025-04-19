@@ -11,9 +11,9 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\BaseCurves;
+namespace Gaulomail\phpseclib3\Crypt\EC\BaseCurves;
 
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Base

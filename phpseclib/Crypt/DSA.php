@@ -27,14 +27,14 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt;
+namespace Gaulomail\phpseclib3\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\Common\AsymmetricKey;
-use Gaulomail\Phpseclib3\Crypt\DSA\Parameters;
-use Gaulomail\Phpseclib3\Crypt\DSA\PrivateKey;
-use Gaulomail\Phpseclib3\Crypt\DSA\PublicKey;
-use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Crypt\Common\AsymmetricKey;
+use Gaulomail\phpseclib3\Crypt\DSA\Parameters;
+use Gaulomail\phpseclib3\Crypt\DSA\PrivateKey;
+use Gaulomail\phpseclib3\Crypt\DSA\PublicKey;
+use Gaulomail\phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Pure-PHP FIPS 186-4 compliant implementation of DSA.

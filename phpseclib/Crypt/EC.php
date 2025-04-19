@@ -27,24 +27,24 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt;
+namespace Gaulomail\phpseclib3\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\Common\AsymmetricKey;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Curve25519;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed25519;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed448;
-use Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
-use Gaulomail\Phpseclib3\Crypt\EC\Parameters;
-use Gaulomail\Phpseclib3\Crypt\EC\PrivateKey;
-use Gaulomail\Phpseclib3\Crypt\EC\PublicKey;
-use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
-use Gaulomail\Phpseclib3\Exception\UnsupportedCurveException;
-use Gaulomail\Phpseclib3\Exception\UnsupportedOperationException;
-use Gaulomail\Phpseclib3\File\ASN1;
-use Gaulomail\Phpseclib3\File\ASN1\Maps\ECParameters;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Crypt\Common\AsymmetricKey;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Curve25519;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Ed25519;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Ed448;
+use Gaulomail\phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
+use Gaulomail\phpseclib3\Crypt\EC\Parameters;
+use Gaulomail\phpseclib3\Crypt\EC\PrivateKey;
+use Gaulomail\phpseclib3\Crypt\EC\PublicKey;
+use Gaulomail\phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\phpseclib3\Exception\UnsupportedCurveException;
+use Gaulomail\phpseclib3\Exception\UnsupportedOperationException;
+use Gaulomail\phpseclib3\File\ASN1;
+use Gaulomail\phpseclib3\File\ASN1\Maps\ECParameters;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Pure-PHP implementation of EC.

@@ -11,7 +11,7 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace Gaulomail\Phpseclib3\Math\BigInteger\Engines;
+namespace Gaulomail\phpseclib3\Math\BigInteger\Engines;
 
 /**
  * Pure-PHP 64-bit Engine.

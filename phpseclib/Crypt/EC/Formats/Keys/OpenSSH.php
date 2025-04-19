@@ -13,14 +13,14 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys;
+namespace Gaulomail\phpseclib3\Crypt\EC\Formats\Keys;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\Common\Formats\Keys\OpenSSH as Progenitor;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed25519;
-use Gaulomail\Phpseclib3\Exception\UnsupportedCurveException;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\Common\Formats\Keys\OpenSSH as Progenitor;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Ed25519;
+use Gaulomail\phpseclib3\Exception\UnsupportedCurveException;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * OpenSSH Formatted EC Key Handler

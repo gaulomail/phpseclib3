@@ -22,22 +22,22 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\File;
+namespace Gaulomail\phpseclib3\File;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\Common\PrivateKey;
-use Gaulomail\Phpseclib3\Crypt\Common\PublicKey;
-use Gaulomail\Phpseclib3\Crypt\DSA;
-use Gaulomail\Phpseclib3\Crypt\EC;
-use Gaulomail\Phpseclib3\Crypt\Hash;
-use Gaulomail\Phpseclib3\Crypt\PublicKeyLoader;
-use Gaulomail\Phpseclib3\Crypt\Random;
-use Gaulomail\Phpseclib3\Crypt\RSA;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\PSS;
-use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
-use Gaulomail\Phpseclib3\File\ASN1\Element;
-use Gaulomail\Phpseclib3\File\ASN1\Maps;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\Common\PrivateKey;
+use Gaulomail\phpseclib3\Crypt\Common\PublicKey;
+use Gaulomail\phpseclib3\Crypt\DSA;
+use Gaulomail\phpseclib3\Crypt\EC;
+use Gaulomail\phpseclib3\Crypt\Hash;
+use Gaulomail\phpseclib3\Crypt\PublicKeyLoader;
+use Gaulomail\phpseclib3\Crypt\Random;
+use Gaulomail\phpseclib3\Crypt\RSA;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\PSS;
+use Gaulomail\phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\phpseclib3\File\ASN1\Element;
+use Gaulomail\phpseclib3\File\ASN1\Maps;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Pure-PHP X.509 Parser

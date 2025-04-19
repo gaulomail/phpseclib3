@@ -6,10 +6,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\Twofish;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\Twofish;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class TwofishTest extends PhpseclibTestCase
 {

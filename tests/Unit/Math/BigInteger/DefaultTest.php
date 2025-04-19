@@ -6,9 +6,9 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Math\BigInteger;
+namespace Gaulomail\phpseclib3\Tests\Unit\Math\BigInteger;
 
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 class DefaultTest extends TestCase
 {
@@ -19,6 +19,6 @@ class DefaultTest extends TestCase
 
     public static function getStaticClass()
     {
-        return 'phpseclib3\Math\BigInteger';
+        return 'Gaulomail\phpseclib3\Math\BigInteger';
     }
 }

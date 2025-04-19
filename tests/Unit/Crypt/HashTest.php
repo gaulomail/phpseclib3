@@ -6,11 +6,11 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\Hash;
-use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\Hash;
+use Gaulomail\phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class HashTest extends PhpseclibTestCase
 {

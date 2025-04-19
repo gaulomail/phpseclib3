@@ -10,7 +10,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Math\Common\FiniteField;
+namespace Gaulomail\phpseclib3\Math\Common\FiniteField;
 
 /**
  * Finite Field Integer

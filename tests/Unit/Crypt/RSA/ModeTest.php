@@ -6,13 +6,13 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\RSA;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt\RSA;
 
-use Gaulomail\Phpseclib3\Crypt\PublicKeyLoader;
-use Gaulomail\Phpseclib3\Crypt\RSA;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\PKCS8;
-use Gaulomail\Phpseclib3\Math\BigInteger;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\PublicKeyLoader;
+use Gaulomail\phpseclib3\Crypt\RSA;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\PKCS8;
+use Gaulomail\phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class ModeTest extends PhpseclibTestCase
 {

@@ -11,7 +11,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\Common\Formats\Keys;
+namespace Gaulomail\phpseclib3\Crypt\Common\Formats\Keys;
 
 /**
  * PKCS1 Formatted Key Handler

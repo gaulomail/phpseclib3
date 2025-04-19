@@ -6,9 +6,9 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Math\BigInteger;
+namespace Gaulomail\phpseclib3\Tests\Unit\Math\BigInteger;
 
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 abstract class TestCase extends PhpseclibTestCase
 {

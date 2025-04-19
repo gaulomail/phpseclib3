@@ -6,7 +6,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests;
+namespace Gaulomail\phpseclib3\Tests;
 
 use PHPUnit\Framework\TestCase;
 

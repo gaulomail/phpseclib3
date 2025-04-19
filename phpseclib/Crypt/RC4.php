@@ -40,9 +40,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt;
+namespace Gaulomail\phpseclib3\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\Common\StreamCipher;
+use Gaulomail\phpseclib3\Crypt\Common\StreamCipher;
 
 /**
  * Pure-PHP implementation of RC4.

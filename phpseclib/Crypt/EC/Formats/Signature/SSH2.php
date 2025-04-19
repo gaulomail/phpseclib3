@@ -13,10 +13,10 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Signature;
+namespace Gaulomail\phpseclib3\Crypt\EC\Formats\Signature;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * SSH2 Signature Handler

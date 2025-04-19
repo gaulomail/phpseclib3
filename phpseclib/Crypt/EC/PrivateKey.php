@@ -9,20 +9,20 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC;
+namespace Gaulomail\phpseclib3\Crypt\EC;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\Common;
-use Gaulomail\Phpseclib3\Crypt\EC;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Curve25519;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed25519;
-use Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
-use Gaulomail\Phpseclib3\Crypt\EC\Formats\Signature\ASN1 as ASN1Signature;
-use Gaulomail\Phpseclib3\Crypt\Hash;
-use Gaulomail\Phpseclib3\Exception\UnsupportedOperationException;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\Common;
+use Gaulomail\phpseclib3\Crypt\EC;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Curve25519;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Ed25519;
+use Gaulomail\phpseclib3\Crypt\EC\Formats\Keys\PKCS1;
+use Gaulomail\phpseclib3\Crypt\EC\Formats\Signature\ASN1 as ASN1Signature;
+use Gaulomail\phpseclib3\Crypt\Hash;
+use Gaulomail\phpseclib3\Exception\UnsupportedOperationException;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * EC Private Key

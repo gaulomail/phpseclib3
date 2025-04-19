@@ -10,11 +10,11 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Math\PrimeField;
+namespace Gaulomail\phpseclib3\Math\PrimeField;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Math\BigInteger;
-use Gaulomail\Phpseclib3\Math\Common\FiniteField\Integer as Base;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Math\Common\FiniteField\Integer as Base;
 
 /**
  * Prime Finite Fields

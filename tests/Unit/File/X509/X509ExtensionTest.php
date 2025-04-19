@@ -6,13 +6,13 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\File\X509;
+namespace Gaulomail\phpseclib3\Tests\Unit\File\X509;
 
-use Gaulomail\Phpseclib3\Crypt\EC;
-use Gaulomail\Phpseclib3\Crypt\RSA;
-use Gaulomail\Phpseclib3\File\ASN1;
-use Gaulomail\Phpseclib3\File\X509;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\EC;
+use Gaulomail\phpseclib3\Crypt\RSA;
+use Gaulomail\phpseclib3\File\ASN1;
+use Gaulomail\phpseclib3\File\X509;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class X509ExtensionTest extends PhpseclibTestCase
 {
@@ -81,7 +81,7 @@ class X509ExtensionTest extends PhpseclibTestCase
         }
 
         $this->assertTrue($customExtensionDecodedData['toggle']);
-        $this->assertInstanceOf('phpseclib3\Math\BigInteger', $customExtensionDecodedData['num']);
+        $this->assertInstanceOf('Gaulomail\phpseclib3\Math\BigInteger', $customExtensionDecodedData['num']);
         $this->assertSame('3', (string) $customExtensionDecodedData['num']);
         $this->assertSame('Johnny', $customExtensionDecodedData['name']);
         $this->assertSame(['foo', 'bar'], $customExtensionDecodedData['list']);

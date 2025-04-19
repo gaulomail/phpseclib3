@@ -11,12 +11,12 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys;
+namespace Gaulomail\phpseclib3\Crypt\EC\Formats\Keys;
 
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Curve25519;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Curve448;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\Montgomery as MontgomeryCurve;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Curve25519;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Curve448;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Montgomery Public Key Handler

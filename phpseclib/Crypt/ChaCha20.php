@@ -11,10 +11,10 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt;
+namespace Gaulomail\phpseclib3\Crypt;
 
-use Gaulomail\Phpseclib3\Exception\BadDecryptionException;
-use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\phpseclib3\Exception\BadDecryptionException;
+use Gaulomail\phpseclib3\Exception\InsufficientSetupException;
 
 /**
  * Pure-PHP implementation of ChaCha20.

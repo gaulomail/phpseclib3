@@ -11,12 +11,12 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt;
+namespace Gaulomail\phpseclib3\Crypt;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\Common\StreamCipher;
-use Gaulomail\Phpseclib3\Exception\BadDecryptionException;
-use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\Common\StreamCipher;
+use Gaulomail\phpseclib3\Exception\BadDecryptionException;
+use Gaulomail\phpseclib3\Exception\InsufficientSetupException;
 
 /**
  * Pure-PHP implementation of Salsa20.

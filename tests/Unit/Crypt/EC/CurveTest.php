@@ -6,13 +6,13 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\EC;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt\EC;
 
-use Gaulomail\Phpseclib3\Crypt\EC;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed448;
-use Gaulomail\Phpseclib3\Crypt\PublicKeyLoader;
-use Gaulomail\Phpseclib3\File\ASN1;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\EC;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Ed448;
+use Gaulomail\phpseclib3\Crypt\PublicKeyLoader;
+use Gaulomail\phpseclib3\File\ASN1;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class CurveTest extends PhpseclibTestCase
 {

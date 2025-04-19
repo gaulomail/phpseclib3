@@ -11,9 +11,9 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace Gaulomail\Phpseclib3\Math\BigInteger\Engines\BCMath;
+namespace Gaulomail\phpseclib3\Math\BigInteger\Engines\BCMath;
 
-use Gaulomail\Phpseclib3\Math\BigInteger\Engines\BCMath;
+use Gaulomail\phpseclib3\Math\BigInteger\Engines\BCMath;
 
 /**
  * Built-In BCMath Modular Exponentiation Engine

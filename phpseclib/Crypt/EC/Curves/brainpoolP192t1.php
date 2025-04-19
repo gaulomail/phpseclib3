@@ -11,10 +11,10 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Curves;
+namespace Gaulomail\phpseclib3\Crypt\EC\Curves;
 
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Prime;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\Prime;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 class brainpoolP192t1 extends Prime
 {

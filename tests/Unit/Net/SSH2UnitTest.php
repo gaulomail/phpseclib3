@@ -6,13 +6,13 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Net;
+namespace Gaulomail\phpseclib3\Tests\Unit\Net;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Exception\InsufficientSetupException;
-use Gaulomail\Phpseclib3\Exception\TimeoutException;
-use Gaulomail\Phpseclib3\Net\SSH2;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Exception\InsufficientSetupException;
+use Gaulomail\phpseclib3\Exception\TimeoutException;
+use Gaulomail\phpseclib3\Net\SSH2;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class SSH2UnitTest extends PhpseclibTestCase
 {

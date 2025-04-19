@@ -51,15 +51,15 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt;
+namespace Gaulomail\phpseclib3\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\Common\AsymmetricKey;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\PSS;
-use Gaulomail\Phpseclib3\Crypt\RSA\PrivateKey;
-use Gaulomail\Phpseclib3\Crypt\RSA\PublicKey;
-use Gaulomail\Phpseclib3\Exception\InconsistentSetupException;
-use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Crypt\Common\AsymmetricKey;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\PSS;
+use Gaulomail\phpseclib3\Crypt\RSA\PrivateKey;
+use Gaulomail\phpseclib3\Crypt\RSA\PublicKey;
+use Gaulomail\phpseclib3\Exception\InconsistentSetupException;
+use Gaulomail\phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Pure-PHP PKCS#1 compliant implementation of RSA.
@@ -194,7 +194,7 @@ abstract class RSA extends AsymmetricKey
     /**
      * Modulus (ie. n)
      *
-     * @var Math\BigInteger
+     * @var BigInteger
      */
     protected $modulus;
 

@@ -15,11 +15,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys;
+namespace Gaulomail\phpseclib3\Crypt\EC\Formats\Keys;
 
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed25519;
-use Gaulomail\Phpseclib3\Exception\UnsupportedFormatException;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Ed25519;
+use Gaulomail\phpseclib3\Exception\UnsupportedFormatException;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * libsodium Key Handler

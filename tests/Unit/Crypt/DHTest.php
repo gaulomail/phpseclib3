@@ -6,16 +6,16 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\AES;
-use Gaulomail\Phpseclib3\Crypt\DH;
-use Gaulomail\Phpseclib3\Crypt\DH\Parameters;
-use Gaulomail\Phpseclib3\Crypt\DH\PrivateKey;
-use Gaulomail\Phpseclib3\Crypt\DH\PublicKey;
-use Gaulomail\Phpseclib3\Crypt\EC;
-use Gaulomail\Phpseclib3\Math\BigInteger;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\AES;
+use Gaulomail\phpseclib3\Crypt\DH;
+use Gaulomail\phpseclib3\Crypt\DH\Parameters;
+use Gaulomail\phpseclib3\Crypt\DH\PrivateKey;
+use Gaulomail\phpseclib3\Crypt\DH\PublicKey;
+use Gaulomail\phpseclib3\Crypt\EC;
+use Gaulomail\phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class DHTest extends PhpseclibTestCase
 {

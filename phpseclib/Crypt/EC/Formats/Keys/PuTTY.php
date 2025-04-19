@@ -11,13 +11,13 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Formats\Keys;
+namespace Gaulomail\phpseclib3\Crypt\EC\Formats\Keys;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\Common\Formats\Keys\PuTTY as Progenitor;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\Common\Formats\Keys\PuTTY as Progenitor;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\Base as BaseCurve;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCurve;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * PuTTY Formatted EC Key Handler

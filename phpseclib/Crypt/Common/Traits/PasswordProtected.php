@@ -11,7 +11,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\Common\Traits;
+namespace Gaulomail\phpseclib3\Crypt\Common\Traits;
 
 /**
  * Password Protected Trait for Private Keys

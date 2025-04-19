@@ -9,19 +9,19 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\RSA;
+namespace Gaulomail\phpseclib3\Crypt\RSA;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\Common;
-use Gaulomail\Phpseclib3\Crypt\Hash;
-use Gaulomail\Phpseclib3\Crypt\Random;
-use Gaulomail\Phpseclib3\Crypt\RSA;
-use Gaulomail\Phpseclib3\Crypt\RSA\Formats\Keys\PSS;
-use Gaulomail\Phpseclib3\Exception\UnsupportedAlgorithmException;
-use Gaulomail\Phpseclib3\Exception\UnsupportedFormatException;
-use Gaulomail\Phpseclib3\File\ASN1;
-use Gaulomail\Phpseclib3\File\ASN1\Maps\DigestInfo;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\Common;
+use Gaulomail\phpseclib3\Crypt\Hash;
+use Gaulomail\phpseclib3\Crypt\Random;
+use Gaulomail\phpseclib3\Crypt\RSA;
+use Gaulomail\phpseclib3\Crypt\RSA\Formats\Keys\PSS;
+use Gaulomail\phpseclib3\Exception\UnsupportedAlgorithmException;
+use Gaulomail\phpseclib3\Exception\UnsupportedFormatException;
+use Gaulomail\phpseclib3\File\ASN1;
+use Gaulomail\phpseclib3\File\ASN1\Maps\DigestInfo;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Raw RSA Key Handler

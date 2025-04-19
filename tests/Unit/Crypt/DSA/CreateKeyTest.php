@@ -6,13 +6,13 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\DSA;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt\DSA;
 
-use Gaulomail\Phpseclib3\Crypt\DSA;
-use Gaulomail\Phpseclib3\Crypt\DSA\Parameters;
-use Gaulomail\Phpseclib3\Crypt\DSA\PrivateKey;
-use Gaulomail\Phpseclib3\Crypt\DSA\PublicKey;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\DSA;
+use Gaulomail\phpseclib3\Crypt\DSA\Parameters;
+use Gaulomail\phpseclib3\Crypt\DSA\PrivateKey;
+use Gaulomail\phpseclib3\Crypt\DSA\PublicKey;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 /**
  * @requires PHP 7.0

@@ -25,10 +25,10 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Math;
+namespace Gaulomail\phpseclib3\Math;
 
-use Gaulomail\Phpseclib3\Exception\BadConfigurationException;
-use Gaulomail\Phpseclib3\Math\BigInteger\Engines\Engine;
+use Gaulomail\phpseclib3\Exception\BadConfigurationException;
+use Gaulomail\phpseclib3\Math\BigInteger\Engines\Engine;
 
 /**
  * Pure-PHP arbitrary precision integer arithmetic library. Supports base-2, base-10, base-16, and base-256
@@ -90,7 +90,7 @@ class BigInteger implements \JsonSerializable
     {
         self::$engines = [];
 
-        $fqmain = 'phpseclib3\\Math\\BigInteger\\Engines\\' . $main;
+        $fqmain = 'Gaulomail\\phpseclib3\\Math\\BigInteger\\Engines\\' . $main;
         if (!class_exists($fqmain) || !method_exists($fqmain, 'isValidEngine')) {
             throw new \InvalidArgumentException("$main is not a valid engine");
         }

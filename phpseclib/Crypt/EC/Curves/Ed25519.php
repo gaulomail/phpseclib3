@@ -10,12 +10,12 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\EC\Curves;
+namespace Gaulomail\phpseclib3\Crypt\EC\Curves;
 
-use Gaulomail\Phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards;
-use Gaulomail\Phpseclib3\Crypt\Hash;
-use Gaulomail\Phpseclib3\Crypt\Random;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards;
+use Gaulomail\phpseclib3\Crypt\Hash;
+use Gaulomail\phpseclib3\Crypt\Random;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 class Ed25519 extends TwistedEdwards
 {

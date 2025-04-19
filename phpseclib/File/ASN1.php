@@ -19,11 +19,11 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\File;
+namespace Gaulomail\phpseclib3\File;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\File\ASN1\Element;
-use Gaulomail\Phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\File\ASN1\Element;
+use Gaulomail\phpseclib3\Math\BigInteger;
 
 /**
  * Pure-PHP ASN.1 Parser

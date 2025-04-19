@@ -9,9 +9,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\DSA;
+namespace Gaulomail\phpseclib3\Crypt\DSA;
 
-use Gaulomail\Phpseclib3\Crypt\DSA;
+use Gaulomail\phpseclib3\Crypt\DSA;
 
 /**
  * DSA Parameters

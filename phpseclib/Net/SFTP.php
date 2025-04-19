@@ -31,10 +31,10 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Net;
+namespace Gaulomail\phpseclib3\Net;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Exception\FileNotFoundException;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Exception\FileNotFoundException;
 
 /**
  * Pure-PHP implementations of SFTP.

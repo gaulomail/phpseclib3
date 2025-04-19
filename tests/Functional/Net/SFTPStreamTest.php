@@ -6,9 +6,9 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Functional\Net;
+namespace Gaulomail\phpseclib3\Tests\Functional\Net;
 
-use Gaulomail\Phpseclib3\Net\SFTP\Stream;
+use Gaulomail\phpseclib3\Net\SFTP\Stream;
 
 class SFTPStreamTest extends SFTPTestCase
 {

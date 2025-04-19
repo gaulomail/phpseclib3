@@ -9,7 +9,7 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\Common;
+namespace Gaulomail\phpseclib3\Crypt\Common;
 
 /**
  * PrivateKey interface

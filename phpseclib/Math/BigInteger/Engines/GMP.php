@@ -11,9 +11,9 @@
  * @link      http://pear.php.net/package/Math_BigInteger
  */
 
-namespace Gaulomail\Phpseclib3\Math\BigInteger\Engines;
+namespace Gaulomail\phpseclib3\Math\BigInteger\Engines;
 
-use Gaulomail\Phpseclib3\Exception\BadConfigurationException;
+use Gaulomail\phpseclib3\Exception\BadConfigurationException;
 
 /**
  * GMP Engine.

@@ -38,10 +38,10 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt;
+namespace Gaulomail\phpseclib3\Crypt;
 
-use Gaulomail\Phpseclib3\Crypt\Common\BlockCipher;
-use Gaulomail\Phpseclib3\Exception\BadModeException;
+use Gaulomail\phpseclib3\Crypt\Common\BlockCipher;
+use Gaulomail\phpseclib3\Exception\BadModeException;
 
 /**
  * Pure-PHP implementation of DES.

@@ -11,9 +11,9 @@
  * @link      http://phpseclib.sourceforge.net
  */
 
-namespace Gaulomail\Phpseclib3\Crypt\Common\Traits;
+namespace Gaulomail\phpseclib3\Crypt\Common\Traits;
 
-use Gaulomail\Phpseclib3\Crypt\Hash;
+use Gaulomail\phpseclib3\Crypt\Hash;
 
 /**
  * Fingerprint Trait for Private Keys

@@ -6,11 +6,11 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\File\X509;
+namespace Gaulomail\phpseclib3\Tests\Unit\File\X509;
 
-use Gaulomail\Phpseclib3\Crypt\RSA;
-use Gaulomail\Phpseclib3\File\X509;
-use Gaulomail\Phpseclib3\Tests\PhpseclibTestCase;
+use Gaulomail\phpseclib3\Crypt\RSA;
+use Gaulomail\phpseclib3\File\X509;
+use Gaulomail\phpseclib3\Tests\PhpseclibTestCase;
 
 class SPKACTest extends PhpseclibTestCase
 {

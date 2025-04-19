@@ -6,9 +6,9 @@
  * @license   http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Math\BigInteger;
+namespace Gaulomail\phpseclib3\Tests\Unit\Math\BigInteger;
 
-use Gaulomail\Phpseclib3\Math\BigInteger\Engines\PHP32;
+use Gaulomail\phpseclib3\Math\BigInteger\Engines\PHP32;
 
 class PHP32Test extends TestCase
 {
@@ -36,6 +36,6 @@ class PHP32Test extends TestCase
 
     public static function getStaticClass()
     {
-        return 'phpseclib3\Math\BigInteger\Engines\PHP32';
+        return 'Gaulomail\phpseclib3\Math\BigInteger\Engines\PHP32';
     }
 }

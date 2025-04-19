@@ -1,9 +1,9 @@
 <?php
 
-namespace Gaulomail\Phpseclib3\Tests\Unit\Crypt\EC;
+namespace Gaulomail\phpseclib3\Tests\Unit\Crypt\EC;
 
-use Gaulomail\Phpseclib3\Common\Functions\Strings;
-use Gaulomail\Phpseclib3\Crypt\EC\Curves\Ed448;
+use Gaulomail\phpseclib3\Common\Functions\Strings;
+use Gaulomail\phpseclib3\Crypt\EC\Curves\Ed448;
 
 class Ed448PrivateKey
 {
