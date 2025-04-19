@@ -131,7 +131,7 @@ abstract class JWK extends Progenitor
      * Return the array superstructure for an EC public key
      *
      * @param BaseCurve $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @return array
      */
     private static function savePublicKeyHelper(BaseCurve $curve, array $publicKey)
@@ -156,7 +156,7 @@ abstract class JWK extends Progenitor
      * Convert an EC public key to the appropriate format
      *
      * @param BaseCurve $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @param array $options optional
      * @return string
      */
@@ -172,7 +172,7 @@ abstract class JWK extends Progenitor
      *
      * @param BigInteger $privateKey
      * @param Ed25519 $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @param string $secret optional
      * @param string $password optional
      * @param array $options optional

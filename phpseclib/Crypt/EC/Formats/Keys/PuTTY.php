@@ -86,7 +86,7 @@ abstract class PuTTY extends Progenitor
      *
      * @param BigInteger $privateKey
      * @param BaseCurve $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @param string $secret optional
      * @param string $password optional
      * @param array $options optional
@@ -122,7 +122,7 @@ abstract class PuTTY extends Progenitor
      * Convert an EC public key to the appropriate format
      *
      * @param BaseCurve $curve
-     * @param \phpseclib3\Math\Common\FiniteField[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField[] $publicKey
      * @return string
      */
     public static function savePublicKey(BaseCurve $curve, array $publicKey)

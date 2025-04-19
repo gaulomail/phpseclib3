@@ -61,7 +61,7 @@ abstract class MontgomeryPublic
      * Convert an EC public key to the appropriate format
      *
      * @param MontgomeryCurve $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @return string
      */
     public static function savePublicKey(MontgomeryCurve $curve, array $publicKey)

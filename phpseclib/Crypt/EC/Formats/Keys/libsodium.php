@@ -82,7 +82,7 @@ abstract class libsodium
      * Convert an EC public key to the appropriate format
      *
      * @param Ed25519 $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @return string
      */
     public static function savePublicKey(Ed25519 $curve, array $publicKey)
@@ -95,7 +95,7 @@ abstract class libsodium
      *
      * @param BigInteger $privateKey
      * @param Ed25519 $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @param string $secret optional
      * @param string $password optional
      * @return string

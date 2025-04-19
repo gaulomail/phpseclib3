@@ -206,7 +206,7 @@ abstract class Strings
                     break;
                 case 'i':
                     if (!$element instanceof BigInteger && !$element instanceof FiniteField\Integer) {
-                        throw new \InvalidArgumentException('A phpseclib3\Math\BigInteger or phpseclib3\Math\Common\FiniteField\Integer object was expected.');
+                        throw new \InvalidArgumentException('A Gaulomail\phpseclib3\Math\BigInteger or Gaulomail\phpseclib3\Math\Common\FiniteField\Integer object was expected.');
                     }
                     $element = $element->toBytes(true);
                     $result .= pack('Na*', strlen($element), $element);

@@ -164,7 +164,7 @@ abstract class PKCS1 extends Progenitor
      *
      * @param BigInteger $privateKey
      * @param BaseCurve $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @param string $secret optional
      * @param string $password optional
      * @param array $options optional

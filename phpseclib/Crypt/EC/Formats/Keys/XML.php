@@ -26,6 +26,7 @@ use Gaulomail\phpseclib3\Crypt\EC\BaseCurves\TwistedEdwards as TwistedEdwardsCur
 use Gaulomail\phpseclib3\Exception\BadConfigurationException;
 use Gaulomail\phpseclib3\Exception\UnsupportedCurveException;
 use Gaulomail\phpseclib3\Math\BigInteger;
+use Gaulomail\phpseclib3\Math\Common\FiniteField\Integer;
 
 /**
  * XML Formatted EC Key Handler
@@ -367,7 +368,7 @@ abstract class XML
      * Convert a public key to the appropriate format
      *
      * @param BaseCurve $curve
-     * @param \phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
+     * @param \Gaulomail\phpseclib3\Math\Common\FiniteField\Integer[] $publicKey
      * @param array $options optional
      * @return string
      */
