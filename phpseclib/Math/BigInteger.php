@@ -11,8 +11,8 @@
  * Here's an example of how to use this library:
  * <code>
  * <?php
- *    $a = new \phpseclib3\Math\BigInteger(2);
- *    $b = new \phpseclib3\Math\BigInteger(3);
+ *    $a = new \Gaulomail\phpseclib3\Math\BigInteger(2);
+ *    $b = new \Gaulomail\phpseclib3\Math\BigInteger(3);
  *
  *    $c = $a->add($b);
  *
@@ -287,8 +287,8 @@ class BigInteger implements \JsonSerializable
      * Here's an example:
      * <code>
      * <?php
-     *    $a = new \phpseclib3\Math\BigInteger('10');
-     *    $b = new \phpseclib3\Math\BigInteger('20');
+     *    $a = new \Gaulomail\phpseclib3\Math\BigInteger('10');
+     *    $b = new \Gaulomail\phpseclib3\Math\BigInteger('20');
      *
      *    list($quotient, $remainder) = $a->divide($b);
      *

@@ -40,7 +40,7 @@ final class PublicKey extends DH
     /**
      * Returns the public key as a BigInteger
      *
-     * @return \phpseclib3\Math\BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function toBigInteger()
     {

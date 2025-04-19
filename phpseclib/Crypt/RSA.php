@@ -201,14 +201,14 @@ abstract class RSA extends AsymmetricKey
     /**
      * Modulus length
      *
-     * @var Math\BigInteger
+     * @var BigInteger
      */
     protected $k;
 
     /**
      * Exponent (ie. e or d)
      *
-     * @var Math\BigInteger
+     * @var BigInteger
      */
     protected $exponent;
 
@@ -252,7 +252,7 @@ abstract class RSA extends AsymmetricKey
     /**
      * Public Exponent
      *
-     * @var Math\BigInteger
+     * @var BigInteger
      */
     protected $publicExponent;
 
@@ -510,7 +510,7 @@ abstract class RSA extends AsymmetricKey
      *
      * See {@link http://tools.ietf.org/html/rfc3447#section-4.1 RFC3447#section-4.1}.
      *
-     * @param bool|Math\BigInteger $x
+     * @param bool|BigInteger $x
      * @param int $xLen
      * @return bool|string
      */
@@ -532,7 +532,7 @@ abstract class RSA extends AsymmetricKey
      * See {@link http://tools.ietf.org/html/rfc3447#section-4.2 RFC3447#section-4.2}.
      *
      * @param string $x
-     * @return Math\BigInteger
+     * @return BigInteger
      */
     protected function os2ip($x)
     {

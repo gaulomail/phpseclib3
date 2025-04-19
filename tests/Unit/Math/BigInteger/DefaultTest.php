@@ -19,6 +19,6 @@ class DefaultTest extends TestCase
 
     public static function getStaticClass()
     {
-        return 'Gaulomail\phpseclib3\Math\BigInteger';
+        return '\Gaulomail\phpseclib3\Math\BigInteger';
     }
 }

@@ -27,6 +27,6 @@ class BCMathTest extends TestCase
 
     public static function getStaticClass()
     {
-        return 'Gaulomail\phpseclib3\Math\BigInteger\Engines\BCMath';
+        return '\Gaulomail\phpseclib3\Math\BigInteger\Engines\BCMath';
     }
 }

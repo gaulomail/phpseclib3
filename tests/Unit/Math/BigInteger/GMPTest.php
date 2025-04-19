@@ -27,6 +27,6 @@ class GMPTest extends TestCase
 
     public static function getStaticClass()
     {
-        return 'Gaulomail\phpseclib3\Math\BigInteger\Engines\GMP';
+        return '\Gaulomail\phpseclib3\Math\BigInteger\Engines\GMP';
     }
 }

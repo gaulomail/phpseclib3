@@ -35,6 +35,6 @@ class PHP64Test extends TestCase
 
     public static function getStaticClass()
     {
-        return 'Gaulomail\phpseclib3\Math\BigInteger\Engines\PHP64';
+        return '\Gaulomail\phpseclib3\Math\BigInteger\Engines\PHP64';
     }
 }

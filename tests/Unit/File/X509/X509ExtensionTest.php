@@ -81,7 +81,7 @@ class X509ExtensionTest extends PhpseclibTestCase
         }
 
         $this->assertTrue($customExtensionDecodedData['toggle']);
-        $this->assertInstanceOf('Gaulomail\phpseclib3\Math\BigInteger', $customExtensionDecodedData['num']);
+        $this->assertInstanceOf('\Gaulomail\phpseclib3\Math\BigInteger', $customExtensionDecodedData['num']);
         $this->assertSame('3', (string) $customExtensionDecodedData['num']);
         $this->assertSame('Johnny', $customExtensionDecodedData['name']);
         $this->assertSame(['foo', 'bar'], $customExtensionDecodedData['list']);

@@ -26,14 +26,14 @@ final class PrivateKey extends DH
     /**
      * Private Key
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \Gaulomail\phpseclib3\Math\BigInteger
      */
     protected $privateKey;
 
     /**
      * Public Key
      *
-     * @var \phpseclib3\Math\BigInteger
+     * @var \Gaulomail\phpseclib3\Math\BigInteger
      */
     protected $publicKey;
 
