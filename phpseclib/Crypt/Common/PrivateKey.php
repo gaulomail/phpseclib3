@@ -18,14 +18,26 @@ namespace Gaulomail\phpseclib3\Crypt\Common;
  */
 interface PrivateKey
 {
+    /**
+     * @param string $message
+     * @return string
+     */
     public function sign($message);
     //public function decrypt($ciphertext);
+    /**
+     * @return \Gaulomail\phpseclib3\Crypt\Common\PublicKey
+     */
     public function getPublicKey();
+    /**
+     * @param string $type
+     * @param array $options
+     * @return string
+     */
     public function toString($type, array $options = []);
 
     /**
      * @param string|false $password
-     * @return mixed
+     * @return \Gaulomail\phpseclib3\Crypt\Common\PrivateKey
      */
     public function withPassword($password = false);
 }

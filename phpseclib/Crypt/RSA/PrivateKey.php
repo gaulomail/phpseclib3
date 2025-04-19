@@ -51,7 +51,7 @@ final class PrivateKey extends RSA implements Common\PrivateKey
     /**
      * Private Exponent
      *
-     * @var BigInteger
+     * @var \Gaulomail\phpseclib3\Math\BigInteger
      */
     protected $privateExponent;
 
@@ -60,9 +60,9 @@ final class PrivateKey extends RSA implements Common\PrivateKey
      *
      * See {@link http://tools.ietf.org/html/rfc3447#section-5.1.2 RFC3447#section-5.1.2}.
      *
-     * @return bool|BigInteger
+     * @return bool|\Gaulomail\phpseclib3\Math\BigInteger
      */
-    private function rsadp(BigInteger $c)
+    private function rsadp(\Gaulomail\phpseclib3\Math\BigInteger $c)
     {
         if ($c->compare(self::$zero) < 0 || $c->compare($this->modulus) > 0) {
             throw new \OutOfRangeException('Ciphertext representative out of range');
@@ -75,9 +75,9 @@ final class PrivateKey extends RSA implements Common\PrivateKey
      *
      * See {@link http://tools.ietf.org/html/rfc3447#section-5.2.1 RFC3447#section-5.2.1}.
      *
-     * @return bool|BigInteger
+     * @return bool|\Gaulomail\phpseclib3\Math\BigInteger
      */
-    private function rsasp1(BigInteger $m)
+    private function rsasp1(\Gaulomail\phpseclib3\Math\BigInteger $m)
     {
         if ($m->compare(self::$zero) < 0 || $m->compare($this->modulus) > 0) {
             throw new \OutOfRangeException('Signature representative out of range');
@@ -88,10 +88,10 @@ final class PrivateKey extends RSA implements Common\PrivateKey
     /**
      * Exponentiate
      *
-     * @param BigInteger $x
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $x
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    protected function exponentiate(BigInteger $x)
+    protected function exponentiate(\Gaulomail\phpseclib3\Math\BigInteger $x)
     {
         switch (true) {
             case empty($this->primes):
@@ -169,12 +169,12 @@ final class PrivateKey extends RSA implements Common\PrivateKey
      * Protects against timing attacks by employing RSA Blinding.
      * Returns $x->modPow($this->exponents[$i], $this->primes[$i])
      *
-     * @param BigInteger $x
-     * @param BigInteger $r
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $x
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $r
      * @param int $i
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    private function blind(BigInteger $x, BigInteger $r, $i)
+    private function blind(\Gaulomail\phpseclib3\Math\BigInteger $x, \Gaulomail\phpseclib3\Math\BigInteger $r, $i)
     {
         $x = $x->multiply($r->modPow($this->publicExponent, $this->primes[$i]));
         $x = $x->modPow($this->exponents[$i], $this->primes[$i]);

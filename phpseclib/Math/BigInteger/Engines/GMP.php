@@ -38,6 +38,20 @@ class GMP extends Engine
     const ENGINE_DIR = 'GMP';
 
     /**
+     * Engine Validity Flag
+     *
+     * @var array<class-string<static>, bool>
+     */
+    protected static $isValidEngine = [];
+
+    /**
+     * Modular Exponentiation Engine
+     *
+     * @var array<class-string<static>, class-string<static>>
+     */
+    protected static $modexpEngine = [];
+
+    /**
      * Test for engine validity
      *
      * @return bool
@@ -424,28 +438,21 @@ class GMP extends Engine
     /**
      * Performs modular exponentiation.
      *
-     * Alias for modPow().
-     *
      * @param GMP $e
      * @param GMP $n
      * @return GMP
      */
     public function powMod(GMP $e, GMP $n)
     {
-        return $this->powModOuter($e, $n);
-    }
+        if (empty(static::$modexpEngine[static::class])) {
+            throw new \RuntimeException('No modular exponentiation engine has been defined');
+        }
 
-    /**
-     * Performs modular exponentiation.
-     *
-     * @param GMP $e
-     * @param GMP $n
-     * @return GMP
-     */
-    protected function powModInner(GMP $e, GMP $n)
-    {
         $class = static::$modexpEngine[static::class];
-        return $class::powModHelper($this, $e, $n);
+        $temp = new $class();
+        $temp->value = gmp_powm($this->value, $e->value, $n->value);
+
+        return $this->normalize($temp);
     }
 
     /**
@@ -689,6 +696,37 @@ class GMP extends Engine
         $temp = clone $this;
         $temp->value = -$this->value;
 
+        return $temp;
+    }
+
+    /**
+     * Sets the modular exponentiation engine
+     *
+     * @param string $engine
+     */
+    public static function setModExpEngine($engine)
+    {
+        $fqengine = 'Gaulomail\\phpseclib3\\Math\\BigInteger\\Engines\\' . static::ENGINE_DIR . '\\' . $engine;
+        if (!class_exists($fqengine)) {
+            throw new \InvalidArgumentException("$engine is not a valid engine");
+        }
+        if (!method_exists($fqengine, 'powModHelper')) {
+            throw new \InvalidArgumentException("$engine does not implement powModHelper");
+        }
+        static::$modexpEngine[static::class] = $fqengine;
+    }
+
+    /**
+     * Performs modular exponentiation.
+     *
+     * @param GMP $e
+     * @param GMP $n
+     * @return GMP
+     */
+    protected function powModInner(GMP $e, GMP $n)
+    {
+        $temp = new GMP();
+        $temp->value = gmp_powm($this->value, $e->value, $n->value);
         return $temp;
     }
 }

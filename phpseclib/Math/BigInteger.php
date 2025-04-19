@@ -137,9 +137,7 @@ class BigInteger implements \JsonSerializable
         if (!isset(self::$mainEngine)) {
             $engines = [
                 ['GMP', ['DefaultEngine']],
-                ['PHP64', ['OpenSSL']],
-                ['BCMath', ['OpenSSL']],
-                ['PHP32', ['OpenSSL']],
+                ['BCMath', ['DefaultEngine']],
                 ['PHP64', ['DefaultEngine']],
                 ['PHP32', ['DefaultEngine']]
             ];
@@ -149,10 +147,11 @@ class BigInteger implements \JsonSerializable
                     self::setEngine($engine[0], $engine[1]);
                     return;
                 } catch (\Exception $e) {
+                    // Continue to the next engine
                 }
             }
 
-            throw new \UnexpectedValueException('No valid BigInteger found. This is only possible when JIT is enabled on Windows and neither the GMP or BCMath extensions are available so either disable JIT or install GMP / BCMath');
+            throw new \UnexpectedValueException('No valid BigInteger engine found. This is only possible when JIT is enabled on Windows and neither the GMP or BCMath extensions are available so either disable JIT or install GMP / BCMath');
         }
     }
 
@@ -246,10 +245,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Adds two BigIntegers.
      *
-     * @param BigInteger $y
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $y
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function add(BigInteger $y)
+    public function add(\Gaulomail\phpseclib3\Math\BigInteger $y)
     {
         return new static($this->value->add($y->value));
     }
@@ -257,10 +256,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Subtracts two BigIntegers.
      *
-     * @param BigInteger $y
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $y
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function subtract(BigInteger $y)
+    public function subtract(\Gaulomail\phpseclib3\Math\BigInteger $y)
     {
         return new static($this->value->subtract($y->value));
     }
@@ -268,10 +267,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Multiplies two BigIntegers
      *
-     * @param BigInteger $x
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $x
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function multiply(BigInteger $x)
+    public function multiply(\Gaulomail\phpseclib3\Math\BigInteger $x)
     {
         return new static($this->value->multiply($x->value));
     }
@@ -298,10 +297,10 @@ class BigInteger implements \JsonSerializable
      * ?>
      * </code>
      *
-     * @param BigInteger $y
-     * @return BigInteger[]
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $y
+     * @return array{\Gaulomail\phpseclib3\Math\BigInteger, \Gaulomail\phpseclib3\Math\BigInteger}
      */
-    public function divide(BigInteger $y)
+    public function divide(\Gaulomail\phpseclib3\Math\BigInteger $y)
     {
         list($q, $r) = $this->value->divide($y->value);
         return [
@@ -315,10 +314,10 @@ class BigInteger implements \JsonSerializable
      *
      * Say you have (30 mod 17 * x mod 17) mod 17 == 1.  x can be found using modular inverses.
      *
-     * @param BigInteger $n
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $n
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function modInverse(BigInteger $n)
+    public function modInverse(\Gaulomail\phpseclib3\Math\BigInteger $n)
     {
         return new static($this->value->modInverse($n->value));
     }
@@ -328,16 +327,16 @@ class BigInteger implements \JsonSerializable
      *
      * Say you have (30 mod 17 * x mod 17) mod 17 == 1.  x can be found using modular inverses.
      *
-     * @param BigInteger $n
-     * @return BigInteger[]
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $n
+     * @return array{\Gaulomail\phpseclib3\Math\BigInteger, \Gaulomail\phpseclib3\Math\BigInteger, \Gaulomail\phpseclib3\Math\BigInteger}
      */
-    public function extendedGCD(BigInteger $n)
+    public function extendedGCD(\Gaulomail\phpseclib3\Math\BigInteger $n)
     {
         extract($this->value->extendedGCD($n->value));
         /**
-         * @var BigInteger $gcd
-         * @var BigInteger $x
-         * @var BigInteger $y
+         * @var \Gaulomail\phpseclib3\Math\BigInteger $gcd
+         * @var \Gaulomail\phpseclib3\Math\BigInteger $x
+         * @var \Gaulomail\phpseclib3\Math\BigInteger $y
          */
         return [
             'gcd' => new static($gcd),
@@ -351,10 +350,10 @@ class BigInteger implements \JsonSerializable
      *
      * Say you have 693 and 609.  The GCD is 21.
      *
-     * @param BigInteger $n
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $n
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function gcd(BigInteger $n)
+    public function gcd(\Gaulomail\phpseclib3\Math\BigInteger $n)
     {
         return new static($this->value->gcd($n->value));
     }
@@ -362,7 +361,7 @@ class BigInteger implements \JsonSerializable
     /**
      * Absolute value.
      *
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function abs()
     {
@@ -454,11 +453,11 @@ class BigInteger implements \JsonSerializable
     /**
      * Performs modular exponentiation.
      *
-     * @param BigInteger $e
-     * @param BigInteger $n
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $e
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $n
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function powMod(BigInteger $e, BigInteger $n)
+    public function powMod(\Gaulomail\phpseclib3\Math\BigInteger $e, \Gaulomail\phpseclib3\Math\BigInteger $n)
     {
         return new static($this->value->powMod($e->value, $n->value));
     }
@@ -466,11 +465,11 @@ class BigInteger implements \JsonSerializable
     /**
      * Performs modular exponentiation.
      *
-     * @param BigInteger $e
-     * @param BigInteger $n
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $e
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $n
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function modPow(BigInteger $e, BigInteger $n)
+    public function modPow(\Gaulomail\phpseclib3\Math\BigInteger $e, \Gaulomail\phpseclib3\Math\BigInteger $n)
     {
         return new static($this->value->modPow($e->value, $n->value));
     }
@@ -489,11 +488,11 @@ class BigInteger implements \JsonSerializable
      *
      * {@internal Could return $this->subtract($x), but that's not as fast as what we do do.}
      *
-     * @param BigInteger $y
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $y
      * @return int in case < 0 if $this is less than $y; > 0 if $this is greater than $y, and 0 if they are equal.
      * @see self::equals()
      */
-    public function compare(BigInteger $y)
+    public function compare(\Gaulomail\phpseclib3\Math\BigInteger $y)
     {
         return $this->value->compare($y->value);
     }
@@ -503,10 +502,10 @@ class BigInteger implements \JsonSerializable
      *
      * If you need to see if one number is greater than or less than another number, use BigInteger::compare()
      *
-     * @param BigInteger $x
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $x
      * @return bool
      */
-    public function equals(BigInteger $x)
+    public function equals(\Gaulomail\phpseclib3\Math\BigInteger $x)
     {
         return $this->value->equals($x->value);
     }
@@ -514,7 +513,7 @@ class BigInteger implements \JsonSerializable
     /**
      * Logical Not
      *
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function bitwise_not()
     {
@@ -524,10 +523,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Logical And
      *
-     * @param BigInteger $x
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $x
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function bitwise_and(BigInteger $x)
+    public function bitwise_and(\Gaulomail\phpseclib3\Math\BigInteger $x)
     {
         return new static($this->value->bitwise_and($x->value));
     }
@@ -535,10 +534,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Logical Or
      *
-     * @param BigInteger $x
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $x
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function bitwise_or(BigInteger $x)
+    public function bitwise_or(\Gaulomail\phpseclib3\Math\BigInteger $x)
     {
         return new static($this->value->bitwise_or($x->value));
     }
@@ -546,10 +545,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Logical Exclusive Or
      *
-     * @param BigInteger $x
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $x
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function bitwise_xor(BigInteger $x)
+    public function bitwise_xor(\Gaulomail\phpseclib3\Math\BigInteger $x)
     {
         return new static($this->value->bitwise_xor($x->value));
     }
@@ -560,7 +559,7 @@ class BigInteger implements \JsonSerializable
      * Shifts BigInteger's by $shift bits, effectively dividing by 2**$shift.
      *
      * @param int $shift
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function bitwise_rightShift($shift)
     {
@@ -573,7 +572,7 @@ class BigInteger implements \JsonSerializable
      * Shifts BigInteger's by $shift bits, effectively multiplying by 2**$shift.
      *
      * @param int $shift
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function bitwise_leftShift($shift)
     {
@@ -586,7 +585,7 @@ class BigInteger implements \JsonSerializable
      * Instead of the top x bits being dropped they're appended to the shifted bit string.
      *
      * @param int $shift
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function bitwise_leftRotate($shift)
     {
@@ -599,7 +598,7 @@ class BigInteger implements \JsonSerializable
      * Instead of the bottom x bits being dropped they're prepended to the shifted bit string.
      *
      * @param int $shift
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function bitwise_rightRotate($shift)
     {
@@ -610,7 +609,7 @@ class BigInteger implements \JsonSerializable
      * Returns the smallest and largest n-bit number
      *
      * @param int $bits
-     * @return BigInteger[]
+     * @return array{\Gaulomail\phpseclib3\Math\BigInteger, \Gaulomail\phpseclib3\Math\BigInteger}
      */
     public static function minMaxBits($bits)
     {
@@ -618,8 +617,8 @@ class BigInteger implements \JsonSerializable
 
         $class = self::$mainEngine;
         extract($class::minMaxBits($bits));
-        /** @var BigInteger $min
-         * @var BigInteger $max
+        /** @var \Gaulomail\phpseclib3\Math\BigInteger $min
+         * @var \Gaulomail\phpseclib3\Math\BigInteger $max
          */
         return [
             'min' => new static($min),
@@ -653,7 +652,7 @@ class BigInteger implements \JsonSerializable
      * Bit length is equal to $size
      *
      * @param int $size
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public static function random($size)
     {
@@ -669,7 +668,7 @@ class BigInteger implements \JsonSerializable
      * Bit length is equal to $size
      *
      * @param int $size
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public static function randomPrime($size)
     {
@@ -684,11 +683,11 @@ class BigInteger implements \JsonSerializable
      *
      * If there's not a prime within the given range, false will be returned.
      *
-     * @param BigInteger $min
-     * @param BigInteger $max
-     * @return false|BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $min
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $max
+     * @return false|\Gaulomail\phpseclib3\Math\BigInteger
      */
-    public static function randomRangePrime(BigInteger $min, BigInteger $max)
+    public static function randomRangePrime(\Gaulomail\phpseclib3\Math\BigInteger $min, \Gaulomail\phpseclib3\Math\BigInteger $max)
     {
         $class = self::$mainEngine;
         return new static($class::randomRangePrime($min->value, $max->value));
@@ -703,11 +702,11 @@ class BigInteger implements \JsonSerializable
      * BigInteger::randomRange($min, $max)
      * BigInteger::randomRange($max, $min)
      *
-     * @param BigInteger $min
-     * @param BigInteger $max
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $min
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $max
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public static function randomRange(BigInteger $min, BigInteger $max)
+    public static function randomRange(\Gaulomail\phpseclib3\Math\BigInteger $min, \Gaulomail\phpseclib3\Math\BigInteger $max)
     {
         $class = self::$mainEngine;
         return new static($class::randomRange($min->value, $max->value));
@@ -734,7 +733,7 @@ class BigInteger implements \JsonSerializable
      * Returns the nth root of a positive biginteger, where n defaults to 2
      *
      * @param int $n optional
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function root($n = 2)
     {
@@ -744,10 +743,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Performs exponentiation.
      *
-     * @param BigInteger $n
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $n
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public function pow(BigInteger $n)
+    public function pow(\Gaulomail\phpseclib3\Math\BigInteger $n)
     {
         return new static($this->value->pow($n->value));
     }
@@ -755,10 +754,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Return the minimum BigInteger between an arbitrary number of BigIntegers.
      *
-     * @param BigInteger ...$nums
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger ...$nums
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public static function min(BigInteger ...$nums)
+    public static function min(\Gaulomail\phpseclib3\Math\BigInteger ...$nums)
     {
         $class = self::$mainEngine;
         $nums = array_map(function ($num) {
@@ -770,10 +769,10 @@ class BigInteger implements \JsonSerializable
     /**
      * Return the maximum BigInteger between an arbitrary number of BigIntegers.
      *
-     * @param BigInteger ...$nums
-     * @return BigInteger
+     * @param \Gaulomail\phpseclib3\Math\BigInteger ...$nums
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
-    public static function max(BigInteger ...$nums)
+    public static function max(\Gaulomail\phpseclib3\Math\BigInteger ...$nums)
     {
         $class = self::$mainEngine;
         $nums = array_map(function ($num) {
@@ -785,11 +784,11 @@ class BigInteger implements \JsonSerializable
     /**
      * Tests BigInteger to see if it is between two integers, inclusive
      *
-     * @param BigInteger $min
-     * @param BigInteger $max
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $min
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $max
      * @return bool
      */
-    public function between(BigInteger $min, BigInteger $max)
+    public function between(\Gaulomail\phpseclib3\Math\BigInteger $min, \Gaulomail\phpseclib3\Math\BigInteger $max)
     {
         return $this->value->between($min->value, $max->value);
     }
@@ -838,7 +837,7 @@ class BigInteger implements \JsonSerializable
      *
      * Given $k, returns -$k
      *
-     * @return BigInteger
+     * @return \Gaulomail\phpseclib3\Math\BigInteger
      */
     public function negate()
     {
@@ -850,10 +849,10 @@ class BigInteger implements \JsonSerializable
      *
      * ie. $s = gmp_scan1($n, 0) and $r = gmp_div_q($n, gmp_pow(gmp_init('2'), $s));
      *
-     * @param BigInteger $r
+     * @param \Gaulomail\phpseclib3\Math\BigInteger $r
      * @return int
      */
-    public static function scan1divide(BigInteger $r)
+    public static function scan1divide(\Gaulomail\phpseclib3\Math\BigInteger $r)
     {
         $class = self::$mainEngine;
         return $class::scan1divide($r->value);
@@ -870,7 +869,7 @@ class BigInteger implements \JsonSerializable
     public function createRecurringModuloFunction()
     {
         $func = $this->value->createRecurringModuloFunction();
-        return function (BigInteger $x) use ($func) {
+        return function (\Gaulomail\phpseclib3\Math\BigInteger $x) use ($func) {
             return new static($func($x->value));
         };
     }
@@ -881,7 +880,7 @@ class BigInteger implements \JsonSerializable
      * Splits BigInteger's into chunks of $split bits
      *
      * @param int $split
-     * @return BigInteger[]
+     * @return array
      */
     public function bitwise_split($split)
     {

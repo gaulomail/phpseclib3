@@ -215,7 +215,7 @@ abstract class Engine implements \JsonSerializable
     }
 
     /**
-     * Sets engine type.
+     * Sets the modular exponentiation engine
      *
      * Throws an exception if the type is invalid
      *
@@ -223,7 +223,7 @@ abstract class Engine implements \JsonSerializable
      */
     public static function setModExpEngine($engine)
     {
-        $fqengine = '\\phpseclib3\\Math\\BigInteger\\Engines\\' . static::ENGINE_DIR . '\\' . $engine;
+        $fqengine = 'Gaulomail\\phpseclib3\\Math\\BigInteger\\Engines\\' . static::ENGINE_DIR . '\\' . $engine;
         if (!class_exists($fqengine) || !method_exists($fqengine, 'isValidEngine')) {
             throw new \InvalidArgumentException("$engine is not a valid engine");
         }
