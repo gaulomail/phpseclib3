@@ -1757,14 +1757,14 @@ abstract class SymmetricKey
                             Strings::increment_str($xor);
                         }
                         $key = Strings::shift($buffer['ciphertext'], $block_size);
-                        $plaintext .= $block ^ $key;
+                        $ciphertext .= $block ^ $key;
                     }
                 } else {
                     for ($i = 0; $i < strlen($ciphertext); $i += $block_size) {
                         $block = substr($ciphertext, $i, $block_size);
                         $key = $this->encryptBlock($xor);
                         Strings::increment_str($xor);
-                        $plaintext .= $block ^ $key;
+                        $ciphertext .= $block ^ $key;
                     }
                 }
                 if ($this->continuousBuffer) {
@@ -1858,12 +1858,12 @@ abstract class SymmetricKey
                             $buffer['xor'] .= $xor;
                         }
                         $key = Strings::shift($buffer['xor'], $block_size);
-                        $plaintext .= $block ^ $key;
+                        $ciphertext .= $block ^ $key;
                     }
                 } else {
                     for ($i = 0; $i < strlen($ciphertext); $i += $block_size) {
                         $xor = $this->encryptBlock($xor);
-                        $plaintext .= substr($ciphertext, $i, $block_size) ^ $xor;
+                        $ciphertext .= substr($ciphertext, $i, $block_size) ^ $xor;
                     }
                     $key = $xor;
                 }
@@ -2743,7 +2743,7 @@ abstract class SymmetricKey
      *    |             }                                                                                |
      *    |             return $ciphertext;                                                              |
      *    |     }                                                                                        |
-     *    | }                                                                                            |
+     | }                                                                                            |
      *    +----------------------------------------------------------------------------------------------+
      *    </code>
      *

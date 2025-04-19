@@ -115,8 +115,8 @@ abstract class AsymmetricKey
     protected static function initialize_static_variables()
     {
         if (!isset(self::$zero)) {
-            self::$zero = new BigInteger(0);
-            self::$one = new BigInteger(1);
+            self::$zero = new \Gaulomail\phpseclib3\Math\BigInteger(0);
+            self::$one = new \Gaulomail\phpseclib3\Math\BigInteger(1);
         }
 
         self::loadPlugins('Keys');
